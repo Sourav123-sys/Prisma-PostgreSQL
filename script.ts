@@ -6,8 +6,8 @@ async function main() {
     // ... you will write your Prisma Client queries here
     
 
-   const user = await prisma.user.findMany()
-console.log(user);
+   await prisma.user.deleteMany()
+
 }
 
 main()
